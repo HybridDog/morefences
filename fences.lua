@@ -362,5 +362,41 @@ do
 			fixed = {other_minus, depth, other_minus, other, height, other},
 		},
 	})
+	
+	minetest.register_node("morefences:leave_fence", {
+		description = "Leave Fence",
+		drawtype = "fencelike",
+		paramtype = "light",
+		tiles = {"default_leaves.png"},
+		groups = {cracky=3},
+		selection_box = {
+			type = "fixed",
+			fixed = {other_minus, depth, other_minus, other, height, other},
+		},
+	})
+	
+	minetest.register_node("morefences:jungleleave_fence", {
+		description = "Jungle Leave Fence",
+		drawtype = "fencelike",
+		paramtype = "light",
+		tiles = {"default_jungleleaves.png"},
+		groups = {cracky=3},
+		selection_box = {
+			type = "fixed",
+			fixed = {other_minus, depth, other_minus, other, height, other},
+		},
+	})
+	
+	minetest.register_node("morefences:mithril_fence", {
+		description = "Mithril Fence",
+		drawtype = "fencelike",
+		paramtype = "light",
+		tiles = {"morefences_mithril.png"},
+		groups = {cracky=3},
+		selection_box = {
+			type = "fixed",
+			fixed = {other_minus, depth, other_minus, other, height, other},
+		},
+	})
 
 end
