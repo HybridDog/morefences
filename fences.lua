@@ -20,7 +20,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_nc_rb.png"},
-		groups = {cracky=3},
+		groups = {cracky=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -32,7 +32,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_clay.png"},
-		groups = {cracky=3},
+		groups = {crumbly=3},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -68,7 +68,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_stone_brick.png"},
-		groups = {cracky=3},
+		groups = {cracky=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -80,7 +80,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_desert_stone_brick.png"},
-		groups = {cracky=3},
+		groups = {cracky=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -92,7 +92,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_dirt.png"},
-		groups = {cracky=3},
+		groups = {crumbly=3},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -104,7 +104,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_sand.png"},
-		groups = {cracky=3},
+		groups = {crumbly=3},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -116,7 +116,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_desert_sand.png"},
-		groups = {cracky=3},
+		groups = {crumbly=3},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -128,7 +128,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_gravel.png"},
-		groups = {cracky=3},
+		groups = {crumbly=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -140,7 +140,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_sandstone.png"},
-		groups = {cracky=3},
+		groups = {cracky=3,crumbly=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -152,7 +152,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_sandstone_brick.png"},
-		groups = {cracky=3},
+		groups = {cracky=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -164,7 +164,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_cactus_side.png"},
-		groups = {cracky=3},
+		groups = {snappy=1,choppy=3,flammable=2},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -176,7 +176,7 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_cloud.png"},
-		groups = {cracky=3},
+		groups = {cracky=1,level=3},
 		selection_box = {
 			type = "fixed",
 			fixed = {other_minus, depth, other_minus, other, height, other},
@@ -344,6 +344,18 @@ do
 		drawtype = "fencelike",
 		paramtype = "light",
 		tiles = {"default_grass.png"},
+		groups = {cracky=3},
+		selection_box = {
+			type = "fixed",
+			fixed = {other_minus, depth, other_minus, other, height, other},
+		},
+	})
+	
+	minetest.register_node("morefences:pumpkin_fence", {
+		description = "Pumpkin Fence",
+		drawtype = "fencelike",
+		paramtype = "light",
+		tiles = {"morefences_pumpkin.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",

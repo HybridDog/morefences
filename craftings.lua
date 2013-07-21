@@ -229,3 +229,12 @@ minetest.register_craft({
 		{'default:junglegrass', 'default:junglegrass', 'default:junglegrass'},
 	}
 })
+if (minetest.get_modpath("farming_plus")) then
+minetest.register_craft({
+	output = 'morefences:pumpkin_fence',
+	recipe = {
+		{'farming:pumpkin', 'farming:pumpkin', 'farming:pumpkin'},
+		{'farming:pumpkin', 'farming:pumpkin', 'farming:pumpkin'},
+	}
+})
+end
