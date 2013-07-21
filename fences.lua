@@ -223,7 +223,7 @@ do
 		description = "Steel Fence",
 		drawtype = "fencelike",
 		paramtype = "light",
-		tiles = {"default_steel_block.png"},
+		tiles = {"morefences_steel.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",
@@ -235,7 +235,7 @@ do
 		description = "Copper Fence",
 		drawtype = "fencelike",
 		paramtype = "light",
-		tiles = {"default_copper_block.png"},
+		tiles = {"morefences_copper.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",
@@ -247,7 +247,7 @@ do
 		description = "Bronze Fence",
 		drawtype = "fencelike",
 		paramtype = "light",
-		tiles = {"default_bronze_block.png"},
+		tiles = {"morefences_bronze.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",
@@ -271,7 +271,7 @@ do
 		description = "Gold Fence",
 		drawtype = "fencelike",
 		paramtype = "light",
-		tiles = {"default_gold_block.png"},
+		tiles = {"morefences_gold.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",
@@ -283,7 +283,7 @@ do
 		description = "Diamond Fence",
 		drawtype = "fencelike",
 		paramtype = "light",
-		tiles = {"default_diamond_block.png"},
+		tiles = {"morefences_diamond.png"},
 		groups = {cracky=3},
 		selection_box = {
 			type = "fixed",
