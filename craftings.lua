@@ -229,12 +229,39 @@ minetest.register_craft({
 		{'default:junglegrass', 'default:junglegrass', 'default:junglegrass'},
 	}
 })
+
+minetest.register_craft({
+	output = 'morefences:jungleleave_fence',
+	recipe = {
+		{'default:jungleleaves', 'default:jungleleaves', 'default:jungleleaves'},
+		{'default:jungleleaves', 'default:jungleleaves', 'default:jungleleaves'},
+	}
+})
+
+minetest.register_craft({
+	output = 'morefences:leave_fence',
+	recipe = {
+		{'default:leaves', 'default:leaves', 'default:leaves'},
+		{'default:leaves', 'default:leaves', 'default:leaves'},
+	}
+})
+
 if (minetest.get_modpath("farming_plus")) then
 minetest.register_craft({
 	output = 'morefences:pumpkin_fence',
 	recipe = {
 		{'farming:pumpkin', 'farming:pumpkin', 'farming:pumpkin'},
 		{'farming:pumpkin', 'farming:pumpkin', 'farming:pumpkin'},
+	}
+})
+end
+
+if (minetest.get_modpath("moreores")) then
+minetest.register_craft({
+	output = 'morefences:mithril_fence',
+	recipe = {
+		{'moreores:mithril_ingot', 'moreores:mithril_ingot', 'moreores:mithril_ingot'},
+		{'moreores:mithril_ingot', 'moreores:mithril_ingot', 'moreores:mithril_ingot'},
 	}
 })
 end
